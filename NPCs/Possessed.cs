@@ -34,7 +34,7 @@ namespace DoomTest.NPCs
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return SpawnCondition.Underworld.Chance * 0.3f; // spawn nell'underworld(inferno) al 38% (è molto complicato capire queste percentuali)
+            return SpawnCondition.Underworld.Chance * 1f; // spawn nell'underworld(inferno) al 38% (è molto complicato capire queste percentuali anche perchè comunque spawna raramente)
         }
 
         public override void NPCLoot()
