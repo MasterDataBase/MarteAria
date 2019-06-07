@@ -28,6 +28,13 @@ namespace DoomTest.NPCs
             Main.npcFrameCount[npc.type] = Main.npcFrameCount[NPCID.Zombie]; //Main.npcFrameCount[3];
             aiType = NPCID.Zombie; // aiType = 3;
             animationType = NPCID.Zombie; // animationType = 3;
+
+            npc.buffImmune[BuffID.OnFire] = true; //immune al debuff "On Fire"
+        }
+
+        public override float SpawnChance(NPCSpawnInfo spawnInfo)
+        {
+            return SpawnCondition.Underworld.Chance * 0.3f; // spawn nell'underworld(inferno) al 38% (è molto complicato capire queste percentuali)
         }
 
         public override void NPCLoot()
