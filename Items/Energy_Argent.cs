@@ -1,3 +1,4 @@
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -7,17 +8,21 @@ namespace MarteAria.Items {
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Energia Argent");
+            DisplayName.SetDefault("Energy Argent");
             Tooltip.SetDefault("This is the powerfull Argent energy.");
         }
         public override void SetDefaults()
         {
-            item.width = 40;
+            item.width = 20;
             item.height = 40;
             item.value = 10000;
             item.rare = 5;
             item.UseSound = SoundID.Item1;
-            item.autoReuse = true;
+
+            // Questa linea permette di stackare l'oggeto fino a un limite di X
+            item.maxStack = 999;
+            
+            //item.autoReuse = true;
         }
 
         public override void AddRecipes()

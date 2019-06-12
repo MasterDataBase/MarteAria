@@ -10,9 +10,14 @@ namespace MarteAria.NPCs{
 
         public override void NPCLoot(NPC npc)
         {
-            Item.NewItem(npc.getRect(), ItemID.Beenade, 20);
-            Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemID.IronBar);
-            Item.NewItem(npc.getRect(), mod.ItemType("Energia_Argent"));
+            // This line will drop 20 Beenade on drop for each enemy
+            //Item.NewItem(npc.getRect(), ItemID.Beenade, 20);
+
+            // This line will drop ... !Please fede help me!
+            //Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemID.IronBar);
+
+            // This line will drop one "Energy Argent"
+            Item.NewItem(npc.getRect(), mod.ItemType("Energy_Argent"), 2);
         }
     }
 }
