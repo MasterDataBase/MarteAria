@@ -4,8 +4,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using MarteAria.Items.Weapons;
 
-namespace DoomTest.Items.Weapons
+namespace MarteAria.Items.Weapons
 {
     public class BFG_Sphere : ModProjectile
     {
@@ -21,10 +22,14 @@ namespace DoomTest.Items.Weapons
             projectile.tileCollide = false;   //this defines if the tile can colide with walls
             projectile.light = 0.50f;
             projectile.timeLeft = 400;
+            projectile.aiStyle = 1;
+            aiType = ProjectileID.Bullet;
+            //projectile.CloneDefaults(ProjectileID.MagnetSphereBall);
         }
-    }
-    public override void AI()
-    {
-        projectile.rotation = (float)Math.Atan2((Double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
+
+        //public override void AI()
+        //{
+        //    projectile.rotation = (float)Math.Atan2((Double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
+        //}
     }
 }

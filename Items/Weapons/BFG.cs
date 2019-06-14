@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DoomTest.Items.Weapons
+namespace MarteAria.Items.Weapons
 {
     public class BFG : ModItem
     {
@@ -24,7 +24,9 @@ namespace DoomTest.Items.Weapons
             item.value = 10000000;
             item.rare = 2;
             item.autoReuse = false;
-            item.shoot = mod.ProjectileType("SferaBFG"); ; // 254=magnet sphere, quello più simile per adesso
+            //item.shoot = mod.ProjectileType("SferaBFG"); ; // 254=magnet sphere, quello più simile per adesso
+            //item.shoot = mod.ProjectileType("BFG_Sphere");
+            item.shoot = 10;
             item.shootSpeed = 16f;
             item.useAmmo = mod.ItemType("BFG_Cell"); //ammo moddato creato su misura
         }

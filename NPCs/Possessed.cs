@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DoomTest.NPCs
+namespace MarteAria.NPCs
 {
     public class Possessed : ModNPC
     {

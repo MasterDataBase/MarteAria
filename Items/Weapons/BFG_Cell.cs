@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DoomTest.Items.Weapons
+namespace MarteAria.Items.Weapons
 {
     public class BFG_Cell : ModItem
     {
@@ -24,6 +24,7 @@ namespace DoomTest.Items.Weapons
             item.value = Item.sellPrice(0, 1, 0, 0);
             item.rare = 8;
             item.shoot = mod.ProjectileType("BFG_Cell");
+            //item.shoot = mod.ProjectileType("BFG_Sphere");
             item.ammo = item.type; // The first item in an ammo class sets the AmmoID to it's type
         }
 

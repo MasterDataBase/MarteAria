@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DoomTest.Items
+namespace MarteAria.Items
 {
     public class Argent_Plasma : ModItem
     {
