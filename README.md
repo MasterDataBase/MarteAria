@@ -6,6 +6,8 @@ Demonic danger is to high!
 Feature:
 <ul>
   <li>BFG (build phase)</li>
-  <li>Laser pistol (prototype) <li>
+  <li>Laser pistol (prototype)</li>
 </ul>
+
+
 
